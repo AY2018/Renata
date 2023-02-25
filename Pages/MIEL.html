@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../Css/miel.css">
     <title>Renata ! MIEL</title>
 </head>
-<body>
+<body onload="getPics()">
     <header class="portfolio_header">
         <a href="./../index.html">
             <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
@@ -38,10 +38,10 @@
             </section>
             <section class="portfolio_section_images slideshow-container">
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Miel/compress/image 93.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Miel/compress/image 93.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Miel/compress/image 94.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Miel/compress/image 94.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -51,13 +51,19 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
+
+                
             </section>
             
         </article>
         
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
         
     </main>
-
+    
     <script src="./../JS/script.js"></script>
 </body>
 </html>

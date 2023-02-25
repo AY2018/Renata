@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../Css/vivaviande.css">
     <title>Renata ! VIVAVIANDE</title>
 </head>
-<body>
+<body onload="getPics()">
     <header class="portfolio_header">
         <a href="./../index.html">
             <img src="./../Pages de portefolio/home_noir.svg" alt="icone d'une maison" class="homeIcon">
@@ -44,10 +44,17 @@
             </section>
             <section class="portfolio_section_images">
                 <figure>
-                    <img src="./../Pages de portefolio/Vivaviande/compress/vivaviande.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Vivaviande/compress/vivaviande.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
             </section>
         </article>
+
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
     </main>
+
+    <script src="./../js/script.js"></script>
 </body>
 </html>

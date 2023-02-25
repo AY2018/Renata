@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../Css/beelding.css">
     <title>Renata ! BEELDING</title>
 </head>
-<body>
+<body onload="getPics()">
     <header class="portfolio_header">
         <a href="./../index.html">
             <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
@@ -39,16 +39,16 @@
             </section>
             <section class="portfolio_section_images slideshow-container">
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding1.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding1.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding2.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding2.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding3.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding3.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding4.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/Beelding Company/immages compress/beeilding4.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -62,7 +62,11 @@
                 </div>
             </section>
         </article>
-        
+
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
         
     </main>
 

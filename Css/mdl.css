@@ -15,7 +15,6 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 60px;
-    margin-top: -80px;
 }
 
 .portfolio_section_text {

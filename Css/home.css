@@ -65,6 +65,16 @@ header a:hover{
     width: 20%;
 }
 
+.projets_gallery figure img{
+    transition: 0.2s ease;
+}
+
+.projets_gallery figure img:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 /* MAIN : ENCHANTEE */
 
 #enchantee{

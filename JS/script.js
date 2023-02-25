@@ -1,3 +1,19 @@
+/****** Agrandir images ********/
+function getPics() {} //just for this demo
+const imgs = document.querySelectorAll('.portfolio_section_images img');
+const fullPage = document.querySelector('#protfolio_fullImage');
+const fullPageImg = document.querySelector('#fullImage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPageImg.src = img.src;
+    fullPage.style.display = 'flex';
+  });
+});
+
+
+/****** Slider ********/
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
