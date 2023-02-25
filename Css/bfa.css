@@ -7,3 +7,7 @@ body{
 .portfolio_section_text p {
     color: white;
 }
+
+.portfolio_article{
+    gap: 40px;
+}

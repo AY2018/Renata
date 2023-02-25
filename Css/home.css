@@ -2,6 +2,7 @@
 
 body{
     background-color: #FCF6EA;
+    overflow-x: hidden;
 }
 
 
@@ -42,13 +43,36 @@ header a:hover{
     transform: scale(1.1);
 }
 
+/* Décors Header : start */
+
+.deco_orange {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    top: 0;
+    left: 0;
+}
+
+.deco_rose {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    bottom: 0;
+    right: 0;
+}
+
+/* Décors Header : end */
+
 /* MAIN : PROJETS */
 #projets{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding-bottom: 100px;
 }
+
 
 #projets h2{
     margin-bottom: 80px;
@@ -76,7 +100,32 @@ header a:hover{
     transform: scale(1.1);
 }
 
+/* Décors Projets : start */
+
+.deco_vert {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    bottom: 0;
+    right: 0;
+}
+
+/* Décors Projets : end */
+
+
 /* MAIN : ENCHANTEE */
+
+/* Décors Enchantée : start */
+
+.deco_arc {
+    position: absolute;
+    z-index: -1;
+    width: 15vw;
+    top: -100px;
+    left: 0;
+}
+
+/* Décors Enchantée  : end */
 
 #enchantee{
     padding: 100px 5%;
@@ -84,6 +133,7 @@ header a:hover{
     align-items: center;
     gap: 40px;
     justify-content: center;
+    position: relative;
 }
 
 .enchantee_texte{
@@ -122,6 +172,7 @@ header a:hover{
     object-fit: cover;
 }
 
+
 /* FOOTER */
 
 footer{
@@ -154,7 +205,7 @@ footer figure img{
 
 @media (max-width: 1023px) {
 #enchantee{
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .enchantee_texte{
@@ -170,6 +221,13 @@ footer figure img{
     min-width: 237px;
 }
 }
+
+@media (max-width:960px){
+.deco_arc {
+    top: -40px;
+}
+}
+
 
 @media (max-width:668px){
 .projets_gallery{
@@ -197,6 +255,9 @@ footer figure {
         font-size: 20px;
         width: 80%;
     }
+    .deco_arc, .deco_orange, .deco_rose, .deco_vert{
+        width: 30vw;
+    }
 }
 
 
@@ -209,4 +270,6 @@ footer figure {
     .projets_gallery figure {
         width: 100%;
     }
+
+    
 }
