@@ -217,6 +217,7 @@ p, a{
 
 .portfolio_section_text a{
     text-align: center;
+    width: 100% !important;
 }
 
 .portfolio_section_images {

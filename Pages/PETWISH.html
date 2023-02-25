@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="./../Css/petwish.css">
     <title>Renata ! PETWISH</title>
 </head>
-<body>
-    <!-- Dessins de fond -->
-    <img src="./../Pages de portefolio/PetWish/trait_violet.svg" class="traitViolet">
-    <img src="./../Pages de portefolio/PetWish/blop_jaune.svg" class="blobJaune">
-    <img src="./../Pages de portefolio/PetWish/trait_rouge.svg" class="traitRouge">
-    <img src="./../Pages de portefolio/PetWish/blop_rose.svg" class="blobRose">
-    <img src="./../Pages de portefolio/PetWish/blop_blue.svg" class="blobBleu">
-
+<body onload="getPics()">
     <!-- Header -->
     <header class="portfolio_header">
         <a href="./../index.html">
@@ -44,11 +37,17 @@
             </section>
             <section class="portfolio_section_images">
                 <figure>
-                    <img src="./../Pages de portefolio/PetWish/mix.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/PetWish/phone.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/PetWish/desktop.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
             </section>
         </article>
-        
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
         
     </main>
 

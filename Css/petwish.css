@@ -1,8 +1,7 @@
 /******** BEELDING STYLES ********/
 
 body {
-    background-color: white;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
     position: relative;
 }
 
@@ -12,11 +11,6 @@ body {
 
 .portfolio_section_text p:nth-child(2) {
     margin-bottom: 40px;
-}
-
-.portfolio_header {
-    height: 200px;
-    margin-bottom: 90px;
 }
 
 .portfolio_section_text {
@@ -32,6 +26,7 @@ body {
     transition: 0.3s ease;
     position: relative;
     z-index: 11;
+    width: fit-content;
 }
 
 .portfolio_section_text a:hover{
@@ -40,42 +35,35 @@ body {
 }
 
 .portfolio_section_images {
-    width: 55%;
+    max-width: 500px !important;
+    height: 450px;
+    display: flex;
+    position: relative;
 }
 
-/* Dessins de fond */
-
-.traitViolet{
+.portfolio_section_images figure img{
+    height: 100%;
+    object-fit: contain;
+}
+.portfolio_section_images figure:nth-child(1){
+    height: 300px;
+    z-index: 1;
     position: absolute;
-    width: 200px;
-    left: 5%;
-    top: 20px;
+    bottom: 0;
+    left: 0;
 }
 
-.blobJaune{
+.portfolio_section_images figure:nth-child(2){
+    z-index: 0;
+    height: 300px;
     position: absolute;
-    width: 900px;
-    right: -600px;
-    top: -150px;
+    right: 0;
 }
 
-.traitRouge{
-    position: absolute;
-    width: 200px;
-    right: 10%;
-    top: 90px;
-}
 
-.blobRose{
-    position: absolute;
-    width: 900px;
-    left: -600px;
-    bottom: -150px;
-}
-
-.blobBleu{
-    position: absolute;
-    width: 900px;
-    right: -200px;
-    bottom: -800px;
+@media (max-width: 1023px) {
+    .portfolio_section_images{
+        margin-inline: auto;
+    }
+    
 }
