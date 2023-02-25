@@ -8,10 +8,7 @@ body{
     color: white;
 }
 
-.portfolio_header {
-    height: 200px;
-    padding-bottom: 0;
-}
+
 
 .portfolio_article {
     display: flex;
