@@ -38,6 +38,7 @@ h3 {
 h1, h2, h3, h4{
     font-family: 'Lora', Arial, Helvetica, sans-serif;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 p, a{
@@ -196,4 +197,49 @@ p, a{
     to {
         opacity: 1
     }
+}
+
+
+/* Responsif */
+
+@media (max-width:668px) {
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p, a{
+    font-size: 16px;
+}
+}
+
+@media (max-width:500px) {
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p, a{
+    font-size: 16px;
+}
+}
+
+@media (max-width:320px) {
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p, a{
+    font-size: 16px;
+}
 }

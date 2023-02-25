@@ -83,6 +83,7 @@ header a:hover{
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: center;
 }
 
 .enchantee_texte{
@@ -113,6 +114,8 @@ header a:hover{
 
 .enchantee_image{
     width: 48%;
+    min-width: 437px;
+    max-width: 478px;
 }
 
 .enchantee_image img{
@@ -145,4 +148,65 @@ footer figure{
 
 footer figure img{
     height: 100px;
+}
+
+/* Responsif */
+
+@media (max-width: 1023px) {
+#enchantee{
+    flex-direction: column-reverse;
+}
+
+.enchantee_texte{
+    width: 100%;
+}
+
+.enchantee_texte h2{
+    margin-bottom: 30px;
+}
+
+.enchantee_image{
+    width: 100%;
+    min-width: 237px;
+}
+}
+
+@media (max-width:668px){
+.projets_gallery{
+    gap: 30px;
+    width: 90%;
+}
+
+.projets_gallery figure{
+    width: 45%;
+}
+
+footer {
+    padding: 100px 0;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer figure {
+    width: 100%;
+}
+}
+
+@media (max-width:500px){
+    header p{
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width:320px) {
+    .projets_gallery {
+        gap: 30px;
+        width: 90%;
+    }
+
+    .projets_gallery figure {
+        width: 100%;
+    }
 }
