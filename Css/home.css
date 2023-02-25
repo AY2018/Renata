@@ -1,0 +1,149 @@
+/******** HOME PAGE STYLES ********/
+
+body{
+    background-color: #FCF6EA;
+}
+
+h1{
+    font-size: 96px;
+}
+
+h2{
+    font-size: 64px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+
+/* HOME : HEADER */
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 0;
+}
+
+header h1{
+    margin-bottom: 30px;
+}
+
+header p{
+    font-weight: 400;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+header a{
+    font-weight: bold;
+    color: white;
+    background-color: #D90175;
+    border-radius: 4px;
+    padding: 13px 56px;
+    transition: 0.3s ease;
+}
+
+header a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* MAIN : PROJETS */
+#projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projets h2{
+    margin-bottom: 80px;
+}
+.projets_gallery{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.projets_gallery figure{
+    width: 20%;
+}
+
+/* MAIN : ENCHANTEE */
+
+#enchantee{
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.enchantee_texte{
+    width: 48%;
+}
+
+.enchantee_texte h2{
+    margin-bottom: 80px;
+}
+
+.enchantee_texte p{
+    margin-bottom: 30px;
+}
+
+.enchantee_texte a{
+    padding: 7px 56px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #D90175;
+    transition: 0.3s ease;
+}
+
+.enchantee_texte a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.enchantee_image{
+    width: 48%;
+}
+
+.enchantee_image img{
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+footer h2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    gap: 20px;
+}
+
+footer figure img{
+    height: 100px;
+}
