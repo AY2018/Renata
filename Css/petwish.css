@@ -1,0 +1,81 @@
+/******** BEELDING STYLES ********/
+
+body {
+    background-color: white;
+    padding-bottom: 400px;
+    position: relative;
+}
+
+.portfolio_section_text p {
+    color: black;
+}
+
+.portfolio_section_text p:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.portfolio_header {
+    height: 200px;
+    margin-bottom: 90px;
+}
+
+.portfolio_section_text {
+    width: 45%;
+}
+
+.portfolio_section_text a{
+    color: white;
+    font-weight: bold;
+    background-color: #FF007A;
+    padding: 13px 36px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 11;
+}
+
+.portfolio_section_text a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.portfolio_section_images {
+    width: 55%;
+}
+
+/* Dessins de fond */
+
+.traitViolet{
+    position: absolute;
+    width: 200px;
+    left: 5%;
+    top: 20px;
+}
+
+.blobJaune{
+    position: absolute;
+    width: 900px;
+    right: -600px;
+    top: -150px;
+}
+
+.traitRouge{
+    position: absolute;
+    width: 200px;
+    right: 10%;
+    top: 90px;
+}
+
+.blobRose{
+    position: absolute;
+    width: 900px;
+    left: -600px;
+    bottom: -150px;
+}
+
+.blobBleu{
+    position: absolute;
+    width: 900px;
+    right: -200px;
+    bottom: -800px;
+}

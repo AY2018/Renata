@@ -47,6 +47,8 @@ p, a{
 
 /* Général des pages Portfolio */
 
+/* Portfolio : Header */
+
 .portfolio_header {
     display: flex;
     height: 150px;
@@ -65,9 +67,104 @@ p, a{
 }
 
 .portfolio_header .homeIcon {
-    height: 20%;
+    height: 30px;
     width: fit-content;
     position: absolute;
     top: 20px;
     left: 5%;
+}
+
+/* Portfolio Contenu */
+
+.portfolio_article {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.portfolio_section_text {
+    width: 42%;
+}
+
+.portfolio_section_text p {
+    margin-bottom: 30px;
+}
+
+
+.portfolio_section_images {
+    width: 58%;
+}
+
+/* Portfolio slider */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.slideDots{
+    margin-top: 40px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
