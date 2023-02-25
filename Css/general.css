@@ -83,6 +83,7 @@ p, a{
     padding: 0 100px;
     justify-content: space-between;
     padding-bottom: 60px;
+    gap: 40px;
 }
 
 .portfolio_section_text {
@@ -205,7 +206,38 @@ p, a{
 
 /* Responsif */
 
+@media (max-width: 1023px) {
+.portfolio_article {
+    flex-direction: column;
+}
+
+.portfolio_section_text {
+    width: 100% !important;
+}
+
+.portfolio_section_text a{
+    text-align: center;
+}
+
+.portfolio_section_images {
+    width: 100% !important;
+}
+}
+
+
 @media (max-width:668px) {
+
+.portfolio_article {
+    padding: 0 5% !important;
+}
+
+#protfolio_fullImage img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+
 h1 {
     font-size: 64px;
 }
