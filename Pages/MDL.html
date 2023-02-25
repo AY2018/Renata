@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../Css/mdl.css">
     <title>Renata ! MDL</title>
 </head>
-<body>
+<body onload="getPics()">
     <header class="portfolio_header">
         <a href="./../index.html">
             <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
@@ -29,19 +29,19 @@
             </section>
             <section class="portfolio_section_images slideshow-container">
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/MDL/compress/mdl1.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl1.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/MDL/compress/mdl2.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl2.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/MDL/compress/mdl3.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl3.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/MDL/compress/mdl4.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl4.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
                 <figure class="mySlides fade">
-                    <img src="./../Pages de portefolio/MDL/compress/mdl5.png" alt="image montrant le travail réalisé">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl5.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
                 </figure>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -56,7 +56,10 @@
             </div>
         </article>
         
-        
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div> onclick="FullView(this.src)"
     </main>
 
     <script src="./../JS/script.js"></script>
