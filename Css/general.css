@@ -101,7 +101,6 @@ p, a{
     width: 55%;
 }
 
-
 #protfolio_fullImage {
     position: fixed;
     top: 0;
@@ -121,14 +120,6 @@ p, a{
     object-fit: contain;
 }
 
-#closeBtn{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    font-size: 36px;
-    color: white;
-    cursor: pointer;
-}
 /* Portfolio slider */
 
 /* Slideshow container */
@@ -171,6 +162,7 @@ p, a{
 .slideDots{
     margin-top: 40px;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
